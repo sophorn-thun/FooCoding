@@ -1,1 +1,1 @@
-# FooCoding is part of my full stack web development course/program. 
+# FooCoding repository is created for my full stack web development course/program offered by FooCoding. It contains codes for all of the projects under the course which range from the beginning of HTML and CSS to JavaScript. 
