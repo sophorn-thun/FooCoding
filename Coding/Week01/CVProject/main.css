@@ -31,6 +31,7 @@ h1 {
     color: black;
     border-color: black;
 }
+
 .head {
     text-align: center;
     padding-top: 1.2rem;
@@ -63,7 +64,7 @@ li {
     margin-bottom: 1rem;
 }
 
-.h2right {
+.skill-and-languages {
     color: white;
 }
 
@@ -124,7 +125,7 @@ html {
     margin-bottom: 1rem;
  }
 
-ul.mainrespon {
+ul.mainresponsibility {
     margin-left: 2.5rem;
  }
 .container {
