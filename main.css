@@ -85,7 +85,7 @@ img {
     margin-left: 1.4rem;
 }
 
-.head {
+.name-title {
     display: flex;
     flex-direction: column;
     background-color: rgb(225, 225, 232);
