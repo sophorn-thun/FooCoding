@@ -32,10 +32,11 @@ h1 {
     border-color: black;
 }
 
-.head {
+.title {
     text-align: center;
     padding-top: 1.2rem;
     font-weight: 800px;
+    background-color: rgb(182, 184, 186);
 }
 
 h2 {
@@ -45,9 +46,9 @@ h2 {
 
 h3 {
     text-align: center;
-    margin-bottom: 1rem;
     margin-top: 0.8rem;
-    color:rgb(110, 110, 117)
+    color:rgb(110, 110, 117);
+    padding-bottom: 1rem;
 }
 
 hr {
@@ -64,11 +65,23 @@ li {
     margin-bottom: 1rem;
 }
 
-.skill-and-languages {
+a:visited {
+    color: rgb(130, 11, 11);
+}
+
+a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+a:active {
+    color: red;
+}
+.languages {
     color: white;
 }
 
-.edfirst, .edsecond, .edthird, .edfourth, .experience {
+.education, .experience {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,7 +141,7 @@ html {
 ul.mainresponsibility {
     margin-left: 2.5rem;
  }
-.container {
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
