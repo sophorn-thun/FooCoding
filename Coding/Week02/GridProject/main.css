@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: x-large;
+    padding: 1rem 1rem 1rem 0;
+    text-align: left;
+    background-color: rgb(5, 45, 46);
+    position: fixed; 
+    top: 0;
+    width: 87%;
+    border-radius: 15px 15px 15px 15px;
+}
+
+h1 {
+    animation-name: left-to-right;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    position: relative;
+    animation-play-state: running;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    color:rgb(154, 168, 167)
+}
+
+@keyframes left-to-right {
+    0% {
+        left: 0%;
+    }
+    
+    100% {
+        left: 80%;
+    }
+}
+
+html {
+    background-color: rgb(214, 222, 222);
+}
+
+#grid-floats, #grid-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+ul li:first-child {
+    grid-column: span 2;
+}
+
+h2 {
+    margin: 7rem 2rem 2rem 1rem;
+    color: rgb(95, 92, 90);
+    font-size: 2rem;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(250, 248, 247);
+}
+
+p {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+body {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Cambria', Cochin, Georgia, Times;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+
+}
+
+img:hover {
+    transform: scale(0.95);
+}
+
+.grid-item {
+    background-color: rgb(88, 113, 114);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 15px 15px 15px 15px;
+    cursor:pointer;
+}
+
+
+
+@media (min-width: 640px) {
+    #grid-floats, #grid-flex {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    } 
+    
+    .grid-item {
+        grid-column: span 2;
+    }
+    ul li:first-child {
+        grid-column: span 3;
+    }
+
+    ul li:nth-child(2) {
+        grid-column: span 3;
+    }
+}
+
+@media (min-width: 1024px) {
+    #grid-floats, #grid-flex {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem; 
+    }
+    
+    .grid-item {
+        grid-column: span 3;
+    }
+
+    ul li:first-child {
+        grid-column: span 6;
+    }
+
+}
