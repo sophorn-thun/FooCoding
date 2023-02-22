@@ -63,11 +63,11 @@ li {
     margin-bottom: 1rem;
 }
 
-.h2right {
+.languages {
     color: white;
 }
 
-.edfirst, .edsecond, .edthird, .edfourth, .experience {
+.education, .experience {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,7 +124,7 @@ html {
     margin-bottom: 1rem;
  }
 
-ul.mainrespon {
+ul.main-responsibility {
     margin-left: 2.5rem;
  }
 .container {
