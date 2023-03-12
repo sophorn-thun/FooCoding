@@ -22,3 +22,17 @@ y = 'I am a new string';
 console.log("the value of my logged string will be: 'I am a new string'");
 console.log(y);
 
+/* 5. Round the number 7.25, to the nearest integer */
+let z = 7.25;
+console.log(z);
+let a = Math.round(z);
+console.log(a);
+
+var highestNumber;
+if (z > a) {
+    highestNumber = z;
+}
+else {
+    highestNumber = a;
+};
+console.log(highestNumber);
