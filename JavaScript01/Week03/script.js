@@ -20,3 +20,18 @@ console.log(favoriteAnimals);
 favoriteAnimals.indexOf('meerkat', 0);
 console.log('The item you are looking for is at index: ' + favoriteAnimals.indexOf('meerkat', 0));
 
+/* More JavaScript */
+
+// 1. Function with 3 arguments
+function sumArguments(num1, num2, num3) {
+  return num1 + num2 + num3
+};
+
+sumArguments(10,20,39) //Example
+
+/* 2. Function colorCar */
+function colorCar(color) {
+  return console.log('a ' + color + ' ' + 'car')
+};
+
+colorCar('red') //Insert color here
