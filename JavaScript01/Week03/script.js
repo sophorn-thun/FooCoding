@@ -35,3 +35,23 @@ function colorCar(color) {
 };
 
 colorCar('red') //Insert color here
+
+/* 3. Object function */
+const myObject = {
+  exampleName: 'Sam',
+  exampleOccupation: 'Programmer',
+  exampleAge: 30,
+};
+
+function getObject(obj) {
+  for (let property in obj) {
+    if (typeof obj[property] === 'object') {
+      console.log(`${property}:`);
+      getObject(obj[property]);
+    } else {
+      console.log(`${property}: ${obj[property]}`);
+    }
+  }
+}
+
+getObject(myObject);
