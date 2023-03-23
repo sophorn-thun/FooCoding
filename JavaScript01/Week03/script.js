@@ -104,5 +104,14 @@ function vehicle(color, code, age) {
 vehicle("black", 2, 2)
 
 
+// 12. Create an object
+let emptyObj = {};
+console.log(emptyObj);
 
+// 13. Create an object for modules
+let moduleObj = {
+  firstTeacher: "Tommy", 
+  secondTeacher: "Sahin"
+}
+console.log(moduleObj)
 
