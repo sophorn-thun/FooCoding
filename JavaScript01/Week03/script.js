@@ -44,14 +44,65 @@ const myObject = {
 };
 
 function getObject(obj) {
-  for (let property in obj) {
-    if (typeof obj[property] === 'object') {
-      console.log(`${property}:`);
-      getObject(obj[property]);
-    } else {
-      console.log(`${property}: ${obj[property]}`);
-    }
-  }
-}
+  return obj
+};
 
 getObject(myObject);
+
+// 4. Function vehicleType
+function vehicleType(color, code){
+  if (code === 1) {
+    return "a " +  color + " car"
+  } else if (code === 2) {
+    return "a " + color + " motobike"
+  }  
+};
+
+vehicleType("red", 1);
+
+// 5. One-line code
+console.log(3 === 3 ? "yes" : "no");
+
+// 6. vehicle Function
+function vehicle(color, code, age){
+  if (code === 1 && age <= 1) {
+    return "a " + color + " new" + " car";
+  } else if (code === 1 && age > 1) {
+    return "a " + color + " used" + " car";
+  } else if (code === 2 && age <= 1) {
+    return "a " + color + " used" + " motobike";
+  } else if (code === 2 && age > 1) {
+    return "a " + color + " used" + " motobike"
+  }
+};
+
+vehicle("red", 2, 1)
+
+// 7. List of vehicles
+let vehicles = ["motobike", "caravan", "bike"];
+console.log(vehicles);
+
+// 8. Get the third element
+vehicles[2]
+console.log(vehicles[2]);
+
+// 9. Revised vehicles funtion
+let vehicles = ["motobike", "caravan", "bike"];
+
+function vehicle(color, code, age) {
+  if (code <= 0) {
+    return "Invalid code!"
+  } else if (code = vehicles[code-1]) {
+      if (age <= 1) {
+        age = "new"
+      } else if (age > 1) {
+        age = "used"
+      }
+  } return "a " + color + " " + age + " " + code; 
+};
+
+vehicle("black", 2, 2)
+
+
+
+
