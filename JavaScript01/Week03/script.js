@@ -103,6 +103,25 @@ function vehicle(color, code, age) {
 
 vehicle("black", 2, 2)
 
+// 10. Advert function
+let vehicles = ["motobike", "caravan", "bike"];
+let advert = "Amazing Joe's Garage, we service "
+
+for (let i = 0; i < vehicles.length; i++) {
+  advert += vehicles[i]
+  if (i === vehicles.length-1) {
+    advert + "s.";
+  } else if (i === vehicles.length-2) {
+    advert += "s, and ";
+  } else if (i !== vehicles.length-1) {
+    advert += "s ";
+  }
+};
+console.log(advert);
+
+// 11. Add one more vehicle
+vehicles.push("car");
+console.log(advert);
 
 // 12. Create an object
 let emptyObj = {};
@@ -114,4 +133,49 @@ let moduleObj = {
   secondTeacher: "Sahin"
 }
 console.log(moduleObj)
+
+// 14. Add property
+moduleObj.languagesTaught = ["HTML", "CSS", "JavaScript"];
+console.log(moduleObj);
+
+// 15.  Equality
+let x = [1, 2, 3];
+let y = [1, 2, 3];
+let z = y;
+
+function looseEqual(a, b) {
+  if (a == b) {
+    return "They are equal!"
+  } return "They are not equal"
+};
+console.log(looseEqual(x, y));
+console.log(looseEqual(z, y));
+console.log(looseEqual(z, x));
+
+function strictEqual(a, b) {
+  if (a === b) {
+    return "They are equal!"
+  } return "They are not equal!"
+};
+console.log(strictEqual(x, y));
+
+// 16. changing order
+let o1 = { foo: "bar"};
+let o2 = { foo: "bar"};
+let o3 = o2;
+
+o2 = { foo: "bar 2"};
+console.log(o3)
+//changing o2 does not change 03
+
+o1 = { foo: "bar 3"};
+console.log(o3)
+//changing o1 does not change 03
+console.log("Yes, the order that I assign matter.")
+
+
+// 17. Coerce
+let bar = 42;
+typeof typeof bar;
+console.log("The above codes change type of value from number to string because typeof are placed twice which mean the code will coerce change the value type of variable");
 
