@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(219, 227, 218);
+  margin: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color:rgb(16, 70, 20);
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top:2px solid rgb(7, 59, 17);
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
