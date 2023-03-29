@@ -102,6 +102,8 @@
       }
     };
 
+    // Function to return book title in array
+    
     const body = document.body;
     const h1 = document.createElement('h1');
     h1.innerText = "10 books Sophorn have read";
@@ -120,6 +122,8 @@
     const bookListTitle = bookListGenerator(bookTitles);
     // document.body.append(bookListTitle);
 
+    //Function in obj to return book & cover 
+    
     function bookListObj(arr, obj) {
       const bookList = document.createElement('ul');
   
@@ -149,7 +153,7 @@
         li.appendChild(infoParagraph);
         bookList.appendChild(li);
       
-        bookCoverAdded(arr[i], li, bookCover, bookListFull);
+        bookCoverAdded(arr[i], li, bookCover);
       }
       return bookList;
     }
@@ -161,7 +165,6 @@
       let keyAccess = obj1[key];
       let img = document.createElement('img');
       img.src = keyAccess;
-
       li.appendChild(img);
     };
 
