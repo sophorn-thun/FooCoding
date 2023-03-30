@@ -106,7 +106,7 @@
     
     const body = document.body;
     const h1 = document.createElement('h1');
-    h1.innerText = "10 books Sophorn have read";
+    h1.innerText = "10 books Sophorn has read";
     body.appendChild(h1);
 
     function bookListGenerator(arr) {
