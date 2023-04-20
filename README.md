@@ -15,5 +15,7 @@ You can check out my live work here:
 1. Resume site: https://sophorn-thun.github.io/FooCoding/Coding/Week01/CVProject/ 
 2. Grid Project: https://sophorn-thun.github.io/FooCoding/Coding/Week02/GridProject/
 3. Clone Website: https://sophorn-thun.github.io/FooCoding/Coding/Week03/ 
-4. DOM Manipulation: https://sophorn-thun.github.io/FooCoding/JavaScript2/Week01/Homework/
+4. Basic DOM Manipulation: https://sophorn-thun.github.io/FooCoding/JavaScript2/Week01/Homework/
+5. JSON and DOM Manipulation: https://sophorn-thun.github.io/FooCoding/JavaScript2/Week02/
+
 
