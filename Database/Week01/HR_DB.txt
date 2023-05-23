@@ -1,1 +1,74 @@
----HR DB---
+-----------------HR Database-------------------
+CREATE DATABASE HR;
+USE HR;
+CREATE TABLE locations (
+    ->   location_id INT PRIMARY KEY,
+    ->   city VARCHAR(100),
+    ->   country_id VARCHAR(2)
+    -> );
+    
+CREATE TABLE employee (
+    -> employee_id INT PRIMARY KEY,
+    -> name VARCHAR(50) NOT NULL,
+    -> department VARCHAR(50)
+    -> location_id INT,
+    -> FOREIGN KEY (location_id) REFERENCES locations(location_id)
+    -> );
+    
+INSERT INTO locations (location_id, city, country_id) VALUES
+    -> (1, 'AAA', 'C1'),
+    -> (2, 'BBB', 'C2'),
+    -> (3, 'CCC', 'C3'),
+    -> (4, 'DDD', 'C4'),
+    -> (5, 'EEE', 'C5'),
+    -> (6, 'FFF', 'C6'),
+    -> (7, 'GGG', 'C7'),
+    -> (8, 'HHH', 'C8'),
+    -> (9, 'III', 'C9'),
+    -> (10, 'JJJ', 'C0');
+    
+INSERT INTO employee (employee_id, name, department, location_id) VALUES
+    -> (11, 'sara', 'finance', 1),
+    -> (22, 'sam', 'IT', 2),
+    -> (33, 'john', 'IT', 3),
+    -> (44, 'sue', 'accounting', 4),
+    -> (55, 'nana', 'service', 4),
+    -> (66, 'sana', 'service', 5),
+    -> (77, 'zam', 'finance', 6),
+    -> (88, 'bobo', 'service', 7),
+    -> (99, 'dii', 'accounting', 8),
+    -> (100, 'goo', 'IT', 9);
+    
+SELECT * FROM employee;
++-------------+------+------------+-------------+
+| employee_id | name | department | location_id |
++-------------+------+------------+-------------+
+|          11 | sara | finance    |           1 |
+|          22 | sam  | IT         |           2 |
+|          33 | john | IT         |           3 |
+|          44 | sue  | accounting |           4 |
+|          55 | nana | service    |           4 |
+|          66 | sana | service    |           5 |
+|          77 | zam  | finance    |           6 |
+|          88 | bobo | service    |           7 |
+|          99 | dii  | accounting |           8 |
+|         100 | goo  | IT         |           9 |
++-------------+------+------------+-------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT * FROM locations;
++-------------+------+------------+
+| location_id | city | country_id |
++-------------+------+------------+
+|           1 | AAA  | C1         |
+|           2 | BBB  | C2         |
+|           3 | CCC  | C3         |
+|           4 | DDD  | C4         |
+|           5 | EEE  | C5         |
+|           6 | FFF  | C6         |
+|           7 | GGG  | C7         |
+|           8 | HHH  | C8         |
+|           9 | III  | C9         |
+|          10 | JJJ  | C0         |
++-------------+------+------------+
+10 rows in set (0.00 sec)
