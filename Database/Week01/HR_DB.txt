@@ -3,7 +3,7 @@ CREATE DATABASE HR;
 USE HR;
 CREATE TABLE locations (
     ->   location_id INT PRIMARY KEY,
-    ->   city VARCHAR(100),
+    ->   city VARCHAR(50),
     ->   country_id VARCHAR(2)
     -> );
     
