@@ -761,7 +761,7 @@ SELECT name FROM country ORDER BY SurfaceArea Desc;
 239 rows in set (0.00 sec)
 
 6. Names of all the cities in the Netherlands
-SELECT name FROM city WHERE CountryCode = 'NLD';
+SELECT city.name FROM city JOIN country ON city.countrycode = country.code WHERE country.name = 'Netherlands';
 +-------------------+
 | name              |
 +-------------------+
