@@ -4,7 +4,7 @@ USE HR;
 CREATE TABLE locations (
     ->   location_id INT PRIMARY KEY,
     ->   city VARCHAR(50),
-    ->   country_id VARCHAR(2)
+    ->   country_id VARCHAR(5)
     -> );
     
 CREATE TABLE employee (
