@@ -1,0 +1,14 @@
+INSERT INTO countrylanguage (CountryCode, Language)
+VALUES ('ABW', 'Language5'),
+       ('ABW', 'Language6'),
+       ('ABW', 'Language7'),
+       ('ABW', 'Language8'),
+       ('ABW', 'Language9');
+
+---- Now country with code ABW has 9 languages-----
+Below is the error message popped up on terminal when user add another country:
+      
+mysql> INSERT INTO countrylanguage (CountryCode, language)
+    -> VALUES ('ABW', 'language10');
+ERROR 1644 (45000): Total number of languages equals or exceeds 10
+mysql> 
