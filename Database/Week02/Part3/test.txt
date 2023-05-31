@@ -1,3 +1,5 @@
+
+// Condition: the database will not allow 10 or more languages //
 INSERT INTO countrylanguage (CountryCode, Language)
 VALUES ('ABW', 'Language5'),
        ('ABW', 'Language6'),
