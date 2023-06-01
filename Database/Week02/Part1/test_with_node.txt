@@ -1,0 +1,87 @@
+sophornthun$ node index;
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 1
+Enter country name to get capital name: Sweden
+Capital City: Stockholm
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 2
+Enter region name to get languages: Caribbean
+Languages in the selected region:
+Dutch
+English
+language5
+language6
+language7
+language8
+language9
+Papiamento
+Spanish
+Creole English
+Creole French
+Bajan
+French
+Haiti Creole
+Hindi
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 3
+Enter language to get number cities that speak this languages: Swedish
+Number of cities where selected language is spoken: 32
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 4
+Language count by continent:
+Continent: Asia, Number of languages spoken: 138
+Continent: Europe, Number of languages spoken: 62
+Continent: North America, Number of languages spoken: 48
+Continent: Africa, Number of languages spoken: 215
+Continent: Oceania, Number of languages spoken: 43
+Continent: South America, Number of languages spoken: 21
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 5
+Enter country name to get distinct languages: Sweden
+Countries with the same official language as Sweden: Finland
+Other countries in the same continent as Sweden: Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Holy See (Vatican City State), Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russian Federation, San Marino, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Yugoslavia
+
+Menu:
+1. Get Capital after entering country
+2. Get languages by region
+3. Get number of cities that speak a language
+4. Get language count by continent
+5. Check official language and continent
+0. Exit
+Select a question (0-5): 0
+Exiting...
