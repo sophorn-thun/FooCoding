@@ -25,14 +25,14 @@ CREATE TABLE User (
      
  CREATE TABLE Tags (
     -> tag_id INT PRIMARY KEY,
-    -> item_id INT,
-    -> tag_name VARCHAR(255) NOT NULL,
+    -> tag_name VARCHAR(255) NOT NULL
     -> ;
     
 CREATE TABLE TagItems (
     ->   tag_id INT,
-    ->   list_id INT,
-    ->   FOREIGN KEY (tag_id) REFERENCES Tags(tag_id)
-    ->   FOREIGN KEY (list_id) REFERENCES ToDoList(list_id)
+    ->   item_id INT,
+    ->   tag_name VARCHAR(100),
+    ->   FOREIGN KEY (tag_id) REFERENCES Tags(tag_id),
+    ->   FOREIGN KEY (item_id) REFERENCES ToDoList(list_id)
     -> );
     
