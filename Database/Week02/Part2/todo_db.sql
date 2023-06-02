@@ -30,9 +30,9 @@ CREATE TABLE User (
     -> ;
     
 CREATE TABLE TagItems (
-    ->   tag_item_id INT,
     ->   tag_id INT,
-    ->   FOREIGN KEY (tag_id) REFERENCES Tags(item_id)
+    ->   list_id INT,
+    ->   FOREIGN KEY (tag_id) REFERENCES Tags(tag_id)
     ->   FOREIGN KEY (list_id) REFERENCES ToDoList(list_id)
     -> );
     
