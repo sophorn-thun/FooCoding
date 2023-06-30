@@ -128,11 +128,11 @@ export const showHelp = () => {
   console.log('');
   console.log('Examples:');
   console.log('  node src/api-cli.js --resource users --method GET --all');
-  console.log('  node src/api-cli.js --resource users --method GET --getById');
+  console.log('  node src/api-cli.js --resource users --method GET --id 123');
   console.log('  node src/api-cli.js --resource users --method PATCH --id 123');
   console.log('  node src/api-cli.js --resource users --method DELETE --id 123');
   console.log('  node src/api-cli.js --resource posts --method GET --all');
-  console.log('  node src/api-cli.js --resource posts --method GET --getById');
+  console.log('  node src/api-cli.js --resource posts --method GET --id 123');
   console.log('  node src/api-cli.js --resource posts --method PATCH --id 123');
   console.log('  node src/api-cli.js --resource posts --method DELETE --id 123');
 };
