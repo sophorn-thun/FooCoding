@@ -18,7 +18,7 @@ The following dependencies are required for this project:
 To install these dependencies, navigate to the project directory and run `npm install`.
 
 ## How to use
-- On terminal, run: ````node api-cli.js `[options]`
+- On terminal, run: ``` node api-cli.js `[options]` ```
 
 Replace `[options]` with the appropriate command-line options described below.
 
@@ -32,9 +32,9 @@ Replace `[options]` with the appropriate command-line options described below.
 
 ### Examples
 
-- To get all users: ```node api-cli.js --resource users --method get --all
-- To get a specific user by ID: ```node api-cli.js --resource users --method get --all
-- To get help: ```node api-cli.js --help
+- To get all users: ``` node api-cli.js --resource users --method get --all ```
+- To get a specific user by ID: ``` node api-cli.js --resource users --method get --all ```
+- To get help: ``` node api-cli.js --help ```
 
 ### Note
 
