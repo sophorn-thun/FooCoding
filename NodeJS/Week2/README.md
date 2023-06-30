@@ -38,7 +38,6 @@ Replace `[options]` with the appropriate command-line options described below.
 
 ### Note
 
-- Make sure to replace <user_id> and <post_id> with the actual ID values.
 - If no options are provided, the CLI will prompt you to choose the resource type and method interactively.
 
 
