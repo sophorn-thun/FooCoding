@@ -4,10 +4,6 @@ import { showHelp } from './utils/questions.js';
 import { getAllUsers, getUserById, updateUser, deleteUser, createUser } from './utils/api.js';
 import { getAllPosts, getPostById, updatePost, deletePost, createPost } from './utils/api.js';
 import { getNewUserData, getUpdatedUserData, getNewPostData, getUpdatedPostData } from './utils/questions.js';
-import { server } from './utils/app.js';
-
-// Start server
-server;
 
 // Parsing command
 const options = {
