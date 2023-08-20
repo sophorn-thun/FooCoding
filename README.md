@@ -17,5 +17,6 @@ You can check out my live work here:
 3. Clone Website: https://sophorn-thun.github.io/FooCoding/Coding/Week03/ 
 4. Basic DOM Manipulation: https://sophorn-thun.github.io/FooCoding/JavaScript2/Week01/Homework/
 5. JSON and DOM Manipulation: https://sophorn-thun.github.io/FooCoding/JavaScript2/Week02/
+6. Portfolio Website: https://sophorn-thun.github.io/Hobby-Projects/public/
 
 
