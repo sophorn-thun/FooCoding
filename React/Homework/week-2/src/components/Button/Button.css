@@ -1,0 +1,8 @@
+.btn {
+	min-height: 2rem;
+	min-width: 4rem;
+  background-color:rgb(61, 150, 61);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}

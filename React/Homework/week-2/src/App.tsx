@@ -1,42 +1,33 @@
 import { useState } from 'react';
 import './styles/App.css';
-import PostFeed from './components/PostFeed';
-import Headline from './components/Headline';
-import Form from './components/Form';
+import PostFeed from './components/PostFeed/PostFeed';
+import Headline from './components/Headline/Headline';
+import Form from './components/Form/Form';
+import { postsData, handleFormSubmit } from './components/PostFeed/posts-types';
 
 function App() {
-  const [posts, setPosts] = useState<any>([
-    { title: 'Hello World', post: 'This is my first post' },
-    { title: 'Pizza is great', post: 'I love pizza' },
-    { title: 'Coding is fun', post: 'I enjoy coding' },
-    { title: 'TypeScript is awesome but', post: 'is slowly killing me 💀' },
-  ]);
+  const [posts, setPosts] = useState<any>(postsData);
 
-  function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const element = event.target as HTMLFormElement;
-
-    const formData = new FormData(element);
-
-    const newTitle = formData.get('title') as string;
-    const newBody = formData.get('post') as string;
-
-    const newPost = { title: newTitle, post: newBody };
-
-    setPosts([...posts, newPost]);
-
-    element.reset();
-  }
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const newPost = handleFormSubmit(event);
+    setPosts([...postsData, newPost]);
+  };
 
   return (
     <div className="wrapper">
-      <Headline headline="Create New Post" />
+      <Headline className="headline" headline="Create New Post" />
       <Form
+        formName="form"
+        inputName="title"
+        inputType="Text"
+        textAreaName="post"
         titlePlaceholder="Title here"
         textAreaPlaceholder="Write your post here"
-        handleFormSubmit={handleFormSubmit}
+        buttonClassName="btn"
+        buttonName="Post"
+        handleFormSubmit={onSubmit}
       />
-      <PostFeed postCards={posts} />
+      <PostFeed ulClassName="post-wrapper" liClassName="post" postCards={posts} />
     </div>
   );
 }
