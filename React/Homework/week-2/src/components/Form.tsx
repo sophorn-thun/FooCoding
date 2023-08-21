@@ -3,7 +3,7 @@ import Button from './Button';
 interface Props {
   titlePlaceholder: string;
   textAreaPlaceholder: string;
-  handleFormSubmit: (event) => void;
+  handleFormSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
 }
 
 function Form({ titlePlaceholder, textAreaPlaceholder, handleFormSubmit }: Props) {
